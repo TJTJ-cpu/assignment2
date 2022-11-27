@@ -3,8 +3,10 @@
 
 struct Paddle
 {
-	float x = ;
-	float y = 0.0f;
+	float px1 = 250;
+	float py1 = 300;
+	float px2 = 350;
+	float py2 = 310;
 };
 
 void DrawPaddle();

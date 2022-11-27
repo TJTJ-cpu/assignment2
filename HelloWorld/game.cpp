@@ -7,11 +7,11 @@ void SpawnBall() {
 	const int objectId = Play::CreateGameObject(ObjectType::TYPE_BALL, { DISPLAY_WIDTH / 2, DISPLAY_HEIGHT - 60 }, 4, "ball"); 
 	GameObject& ball = Play::GetGameObject(objectId);
 	ball.velocity = normalize({ 1, -1 }) * ballSpeed;
-	
+
 };
 
 void SetupScene() {
-	for (int y = 5; y < DISPLAY_WIDTH / 20 ; y = y+(DISPLAY_WIDTH / 58)) {
+	for (int y = 5; y < DISPLAY_WIDTH / 13 ; y = y+(DISPLAY_WIDTH / 58)) {
 		for (int x = 2; x < DISPLAY_WIDTH; x = x + (DISPLAY_WIDTH / 32)) {
 			const int objectId = Play::CreateGameObject(ObjectType::TYPE_BRICK, { x, y }, 6, "brick");
 		}
