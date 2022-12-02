@@ -7,5 +7,5 @@
 
 
 void SpawnBall();
-void StepFrame(float f);
+void StepFrame(float);
 void SetupScene();

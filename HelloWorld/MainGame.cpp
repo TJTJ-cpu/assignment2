@@ -14,8 +14,9 @@ void MainGameEntry( PLAY_IGNORE_COMMAND_LINE )
 bool MainGameUpdate( float elapsedTime )
 {
 	Play::ClearDrawingBuffer(Play::cBlack);
-	DrawPaddle();
+	DrawPaddle(paddle);
 	StepFrame(elapsedTime);
+	UpdatePaddle();
 	Play::PresentDrawingBuffer();
 	return Play::KeyDown( VK_ESCAPE );
 }

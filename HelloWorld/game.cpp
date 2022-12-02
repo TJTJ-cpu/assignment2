@@ -18,7 +18,7 @@ void SetupScene() {
 	}
 }
 
-void StepFrame(float f) {
+void StepFrame(float) {
 	const std::vector<int> ballIds = Play::CollectGameObjectIDsByType(TYPE_BALL);
 	const std::vector<int> brickIds = Play::CollectGameObjectIDsByType(TYPE_BRICK);
 	for (int balls : ballIds)

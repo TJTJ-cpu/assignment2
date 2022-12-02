@@ -3,11 +3,14 @@
 
 struct Paddle
 {
-	float px1 = 250;
-	float py1 = 300;
-	float px2 = 350;
-	float py2 = 310;
+	int const width = 70;
+	int px1 = 200;
+	int py1 = 310;
+	int py2 = 320;
+	int velocity = 5;
 };
+static Paddle paddle;
 
-void DrawPaddle();
+
+void DrawPaddle(const Paddle& paddle);
 void UpdatePaddle();
